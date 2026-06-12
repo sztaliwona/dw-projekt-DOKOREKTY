@@ -26,7 +26,7 @@ const staticPagesContent = {
     "Dystrybucja": "<h2>Dystrybucja</h2><p>Michał Wójcik - Specjalista ds. Dystrybucji<br>Email: dystrybucja@dziennikwschodni.pl</p>",
     "Wniosek o patronat medialny": "<h2>Wniosek o patronat medialny</h2><p>Zgłoś wniosek na minimum 30 dni przed wydarzeniem.</p>",
     "O gazecie": "<h2>O gazecie</h2><p>Przyjazny Czytelnikom, zawsze po stronie mieszkańców, rodzinny i nowoczesny portal informacyjny Lubelszczyzny. Cieszymy się pełnym zaufaniem mieszkańców Lubelszczyzny: od lat jesteśmy liderem na liście najchętniej czytanych tytułów w środkowowschodniej części kraju. Wyprzedzamy w tym względzie zarówno pisma lokalne, jak i ogólnopolskie.</p>",
-    "Jedynki": "<h2>Ostatnie Jedynki Wydań</h2><img src='images/jedynkaDW12czerwca2026.png' alt='Jedynka: 12 czerwca 2026' style='margin: 10px; height: 720px'>"
+    "Jedynki": "<h2>Ostatnie Jedynki Wydań</h2><img src='jedynkaDW12czerwca2026.png' alt='Jedynka: 12 czerwca 2026' style='margin: 10px; height: 720px'>"
 };
 
 let currentArticleId = null;
