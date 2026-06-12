@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dziennik Wschodni - Wersja Akademicka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <a href="#" id="back-to-home-logo">
+                    <img src="images/dziennikwschodnipl.svg" alt="Dziennik Wschodni" class="main-logo">
+                </a>
+            </div>
+            <div class="utility-controls">
+                <button id="btn-theme" title="Zmień motyw">
+                    <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-icon-svg"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-icon-svg hidden"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button id="btn-login-open">Zaloguj się</button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-navigation">
+        <div class="nav-container">
+            <button class="hamburger-menu" aria-label="Otwórz menu">☰ Menu</button>
+            <ul class="nav-links">
+                <li><a href="#" class="route-link">Lublin</a></li>
+                <li><a href="#" class="route-link">Biała Podlaska</a></li>
+                <li><a href="#" class="route-link">Chełm</a></li>
+                <li><a href="#" class="route-link">Lubartów</a></li>
+                <li><a href="#" class="route-link">Łęczna</a></li>
+                <li><a href="#" class="route-link">Kraśnik</a></li>
+                <li><a href="#" class="route-link">Puławy</a></li>
+                <li><a href="#" class="route-link">Świdnik</a></li>
+                <li><a href="#" class="route-link">Zamość</a></li>
+                <li class="dropdown">
+                    <a href="#">Inne regiony ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="route-link">Hrubieszów</a></li>
+                        <li><a href="#" class="route-link">Biłgoraj</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="route-link">e-Wydanie</a></li>
+                <li class="dropdown">
+                    <a href="#">Serwisy tematyczne ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="route-link">Sport</a></li>
+                        <li><a href="#" class="route-link">Biznes</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="ad-banner">REKLAMA</div>
+
+    <main id="app-container">
+        
+        <section id="home-view">
+            <div class="grid-row row-hero">
+                <div class="col-2-3">
+                    <article class="news-card hero-card" data-id="1">
+                        <img src="https://images.unsplash.com/photo-1515162305285-0293e4767cc2?w=800" alt="Remont skrzyżowania">
+                        <div class="hero-overlay">
+                            <span class="news-card-category">Lublin</span>
+                            <h2 class="news-card-title">Wielki remont skrzyżowania w centrum Lublina. Korki sparaliżują miasto?</h2>
+                            <p class="news-card-lead">Od najbliższego poniedziałku rusza długo wyczekiwana przebudowa jednego z kluczowych węzłów komunikacyjnych w mieście. Urzędnicy apelują o omijanie centrum.</p>
+                        </div>
+                    </article>
+                </div>
+                
+                <aside class="col-1-3 most-read-aside">
+                    <div class="section-header">
+                        <h3>Najczęściej czytane</h3>
+                    </div>
+                    <div class="widget-box mt-15 p-0">
+                        <ol class="most-read-list">
+                            <li class="most-read-item" data-id="1">
+                                <span class="most-read-number">1</span>
+                                <p>Wielki remont skrzyżowania w centrum Lublina.</p>
+                            </li>
+                            <li class="most-read-item" data-id="3">
+                                <span class="most-read-number">2</span>
+                                <p>Nowe ścieżki rowerowe w Zamościu połączą osiedla z Roztoczem</p>
+                            </li>
+                            <li class="most-read-item" data-id="5">
+                                <span class="most-read-number">3</span>
+                                <p>Dni Chełma 2026: Poznaliśmy pełną listę gwiazd.</p>
+                            </li>
+                            <li class="most-read-item" data-id="7">
+                                <span class="most-read-number">4</span>
+                                <p>Inwestycje w Białej. Powstanie nowy park miejski.</p>
+                            </li>
+                        </ol>
+                    </div>
+                </aside>
+            </div>
+
+            <div class="grid-row">
+                <div class="col-2-3 sub-grid-2">
+                    <article class="news-card minor-card" data-id="3">
+                        <img src="https://images.unsplash.com/photo-1541614101331-1a5a3a194e92?w=400" alt="Rowerzyści">
+                        <div class="news-card-body">
+                            <span class="news-card-category">Zamość</span>
+                            <h4 class="news-card-title">Nowe ścieżki rowerowe w Zamościu.</h4>
+                            <p class="news-card-lead">Inwestycja warta kilka milionów złotych ułatwi poruszanie się cyklistom i przyciągnie turystów.</p>
+                        </div>
+                    </article>
+                    <article class="news-card minor-card" data-id="5">
+                        <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=400" alt="Koncert">
+                        <div class="news-card-body">
+                            <span class="news-card-category">Chełm</span>
+                            <h4 class="news-card-title">Dni Chełma 2026: Znamy gwiazdy estrady.</h4>
+                            <p class="news-card-lead">Prezydent miasta odsłonił karty. Tegoroczne święto miasta zapowiada się wyjątkowo hucznie.</p>
+                        </div>
+                    </article>
+                </div>
+                <aside class="col-1-3">
+                    <article class="news-card minor-card sub-grid-1-card" data-id="7">
+                        <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=400" alt="Park">
+                        <div class="news-card-body">
+                            <span class="news-card-category">Biała Podlaska</span>
+                            <h4 class="news-card-title">Inwestycje w Białej. Powstanie nowy park miejski.</h4>
+                            <p class="news-card-lead">Mieszkańcy zyskają nową przestrzeń do rekreacji i odpoczynku. Projekt zakłada nasadzenie drzew.</p>
+                        </div>
+                    </article>
+                </aside>
+            </div>
+
+            <div class="ad-banner">REKLAMA</div>
+
+            <div class="grid-row">
+                <div class="col-2-3">
+                    <div class="section-header">
+                        <h3>Wiadomości regionalne</h3>
+                    </div>
+                    <div class="regional-flex">
+                        <article class="news-card regional-strip-card" data-id="3">
+                            <img src="https://images.unsplash.com/photo-1541614101331-1a5a3a194e92?w=200" alt="Zamość" class="strip-thumb">
+                            <div class="strip-content">
+                                <span class="news-card-category">Zamość</span>
+                                <h4 class="news-card-title">Zamość stawia na ekologię: Trasy połączą miasto z Roztoczańskim Parkiem</h4>
+                                <p class="news-card-lead">Inwestycja warta kilka milionów złotych ułatwi poruszanie się cyklistom i przyciągnie turystów. Prace ruszą jeszcze w tym miesiącu.</p>
+                            </div>
+                        </article>
+                        <article class="news-card regional-strip-card" data-id="5">
+                            <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=200" alt="Chełm" class="strip-thumb">
+                            <div class="strip-content">
+                                <span class="news-card-category">Chełm</span>
+                                <h4 class="news-card-title">Wielkie świętowanie w Chełmie. Szykują się koncerty pop i rock</h4>
+                                <p class="news-card-lead">Prezydent miasta odsłonił karty. Tegoroczne święto miasta zapowiada się wyjątkowo hucznie, a koncerty zadowolą fanów.</p>
+                            </div>
+                        </article>
+                        <article class="news-card regional-strip-card" data-id="7">
+                            <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=200" alt="Biała" class="strip-thumb">
+                            <div class="strip-content">
+                                <span class="news-card-category">Biała Podlaska</span>
+                                <h4 class="news-card-title">Nowoczesny zielony plac zabaw dla dzieci w Białej Podlaskiej</h4>
+                                <p class="news-card-lead">Mieszkańcy zyskają nową przestrzeń do rekreacji. Projekt zakłada nasadzenie ponad trzystu nowych drzew w samym centrum.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+                <aside class="col-1-3 newsletter-aside">
+                    <div class="section-header">
+                        <h3>Newsletter</h3>
+                    </div>
+                    <div class="widget-box mt-15">
+                        <img src="images/newsletter-icon.svg" alt="newsletter" style="display: block; margin: 0 auto 15px auto; width: 56px; height: 56px; object-fit: contain;">
+
+                        <p class="promo-text text-center">Zapisz się do naszego bezpłatnego newslettera i otrzymuj najważniejsze informacje z regionu prosto na swoją skrzynkę mailową!</p>
+                        <form id="newsletter-form">
+                            <label for="news-email">Twój adres e-mail:</label>
+                            <input type="email" id="news-email" required placeholder="twójmail@domena.pl">
+                            
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="news-agree" required>
+                                <label for="news-agree" class="label-inline">Akceptuję regulamin serwisu i politykę prywatności.</label>
+                            </div>
+                            <button type="submit">Zapisz mnie</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+
+            <div class="ad-banner">REKLAMA</div>
+
+            <div class="grid-row">
+                <div class="col-2-3">
+                    <div class="section-header">
+                        <h3>Wiadomości - ALARM24</h3>
+                    </div>
+                    <div class="alarm-list">
+                        <article class="news-card alarm-item-card" data-id="2">
+                            <img src="https://images.unsplash.com/photo-1599731427891-b1fc50b868e4?w=200" alt="Pożar" class="strip-thumb">
+                            <div class="strip-content">
+                                <span class="news-card-category alert-tag">ALARM24</span>
+                                <h4 class="news-card-title">Pożar magazynu tekstylnego pod Puławami. Na miejscu 10 zastępów straży</h4>
+                                <p class="news-card-lead">Gęsty, czarny dym widać z odległości kilkunastu kilometrów. Służby ratunkowe walczą z żywiołem.</p>
+                            </div>
+                        </article>
+                        <article class="news-card alarm-item-card" data-id="4">
+                            <img src="https://images.unsplash.com/photo-1506015391300-4802dc74de2e?w=200" alt="Wypadek" class="strip-thumb">
+                            <div class="strip-content">
+                                <span class="news-card-category alert-tag">ALARM24</span>
+                                <h4 class="news-card-title">Zderzenie trzech aut na trasie Lublin - Chełm. Droga zablokowana</h4>
+                                <p class="news-card-lead">Policja wyznaczyła objazdy przez Łęczną. Na miejscu pracują służby medyczne oraz lotnicze pogotowie ratunkowe.</p>
+                            </div>
+                        </article>
+                        <article class="news-card alarm-item-card" data-id="6">
+                            <img src="https://images.unsplash.com/photo-1527482797697-8795b05a13fe?w=200" alt="Wichura" class="strip-thumb">
+                            <div class="strip-content">
+                                <span class="news-card-category alert-tag">ALARM24</span>
+                                <h4 class="news-card-title">Silny wiatr zerwał dach z budynku gospodarczego w powiecie łubartowskim</h4>
+                                <p class="news-card-lead">Strażacy w całym regionie mają pełne ręce roboty. Przez województwo lubelskie przechodzi potężny front burzowy.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+                <aside class="col-1-3 alarm-aside">
+                    <div class="section-header">
+                        <h3>Formularz ALARM24</h3>
+                    </div>
+                    <div class="widget-box mt-15">
+                        <form id="alarm-form">
+                            <label for="alarm-title">Co się stało?:</label>
+                            <input type="text" id="alarm-title" required placeholder="Wypadek, pożar, utrudnienia...">
+                            
+                            <label for="alarm-email">Twój e-mail (do potwierdzenia):</label>
+                            <input type="email" id="alarm-email" required placeholder="twójmail@domena.pl">
+                            
+                            <label for="alarm-date">Data zdarzenia:</label>
+                            <input type="date" id="alarm-date" required>
+                            
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="alarm-agree" required>
+                                <label for="alarm-agree" class="label-inline">Zgadzam się na przetwarzanie danych i akceptuję regulamin.</label>
+                            </div>
+                            <button type="submit">Wyślij zgłoszenie</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section id="article-view" class="hidden">
+            <button class="btn-back">⬅ Powrót do strony głównej</button>
+            <div class="grid-row">
+                <div class="col-2-3" id="single-article-content"></div>
+                
+                <aside class="col-1-3" id="article-sidebar">
+                    
+                    <div class="section-header">
+                        <h3>Najczęściej czytane</h3>
+                    </div>
+                    <div class="widget-box mt-15 p-0">
+                        <ol class="most-read-list">
+                            <li class="most-read-item" data-id="1">
+                                <span class="most-read-number">1</span>
+                                <p>Wielki remont skrzyżowania w centrum Lublina.</p>
+                            </li>
+                            <li class="most-read-item" data-id="3">
+                                <span class="most-read-number">2</span>
+                                <p>Nowe ścieżki rowerowe w Zamościu połączą osiedla z Roztoczem</p>
+                            </li>
+                            <li class="most-read-item" data-id="5">
+                                <span class="most-read-number">3</span>
+                                <p>Dni Chełma 2026: Poznaliśmy pełną listę gwiazd.</p>
+                            </li>
+                            <li class="most-read-item" data-id="7">
+                                <span class="most-read-number">4</span>
+                                <p>Inwestycje w Białej. Powstanie nowy park miejski.</p>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="ad-banner" style="margin: 25px 0;">REKLAMA</div>
+
+                    <div class="section-header">
+                        <h3>Newsletter</h3>
+                    </div>
+                    <div class="widget-box mt-15">
+                        <<img src="images/newsletter-icon.svg" alt="newsletter" style="display: block; margin: 0 auto 15px auto; width: 56px; height: 56px; object-fit: contain;"
+
+                        <p class="promo-text text-center">Zapisz się do naszego bezpłatnego newslettera i otrzymuj najważniejsze informacje z regionu prosto na swoją skrzynkę mailową!</p>
+                        <form id="newsletter-form-article">
+                            <label for="news-email-article">Twój adres e-mail:</label>
+                            <input type="email" id="news-email-article" required placeholder="twójmail@domena.pl">
+                            
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="news-agree-article" required>
+                                <label for="news-agree-article" class="label-inline">Akceptuję regulamin serwisu i politykę prywatności.</label>
+                            </div>
+                            <button type="submit">Zapisz mnie</button>
+                        </form>
+                    </div>
+
+                    <div class="ad-banner" style="margin: 25px 0;">REKLAMA</div>
+
+                    <div class="section-header">
+                        <h3>Formularz ALARM24</h3>
+                    </div>
+                    <div class="widget-box mt-15">
+                        <form id="alarm-form-article">
+                            <label for="alarm-title-article">Co się stało?:</label>
+                            <input type="text" id="alarm-title-article" required placeholder="Wypadek, pożar, utrudnienia...">
+                            
+                            <label for="alarm-email-article">Twój e-mail (do potwierdzenia):</label>
+                            <input type="email" id="alarm-email-article" required placeholder="twójmail@domena.pl">
+                            
+                            <label for="alarm-date-article">Data zdarzenia:</label>
+                            <input type="date" id="alarm-date-article" required>
+                            
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="alarm-agree-article" required>
+                                <label for="alarm-agree-article" class="label-inline">Zgadzam się na przetwarzanie danych i akceptuję regulamin.</label>
+                            </div>
+                            <button type="submit">Wyślij zgłoszenie</button>
+                        </form>
+                    </div>
+
+                </aside>
+            </div>
+        </section>
+
+        <section id="page-view" class="hidden">
+            <button class="btn-back">⬅ Powrót do strony głównej</button>
+            <div class="page-content-box" id="dynamic-page-content"></div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-menu">
+            <div class="footer-logo">
+                <img src="images/dziennikwschodnipl.svg" alt="Dziennik Wschodni" class="footer-logo-img">
+            </div>
+            <ul class="footer-links">
+                <li><a href="#" class="route-link">Redakcja</a></li>
+                <li><a href="#" class="route-link">Reklama</a></li>
+                <li><a href="#" class="route-link">Marketing</a></li>
+                <li><a href="#" class="route-link">Dystrybucja</a></li>
+                <li><a href="#" class="route-link">Wniosek o patronat medialny</a></li>
+                <li><a href="#" class="route-link">O gazecie</a></li>
+                <li><a href="#" class="route-link">Jedynki</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="footer-legal">
+            <p>Wszelkie prawa zastrzeżone. Rozpowszechnianie treści bez zgody wydawcy zabronione. <a href="#">Polityka cookies</a>.</p>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright Iwona Sztal 21838 2026 r.</p>
+        </div>
+    </footer>
+
+    <div id="login-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-tabs">
+                <button id="tab-login" class="active">Logowanie</button>
+                <button id="tab-register">Rejestracja</button>
+            </div>
+            
+            <form id="form-login" class="modal-form">
+                <input type="email" placeholder="Adres e-mail" required>
+                <input type="password" placeholder="Hasło" required>
+                <button type="submit">Zaloguj się</button>
+            </form>
+            
+            <form id="form-register" class="modal-form hidden">
+                <input type="text" placeholder="Imię i nazwisko" required>
+                <input type="email" placeholder="Adres e-mail" required>
+                <input type="password" placeholder="Hasło" required>
+                <input type="password" placeholder="Powtórz hasło" required>
+                <div class="checkbox-container">
+                    <input type="checkbox" required id="reg-agree">
+                    <label for="reg-agree" class="label-inline">Akceptuję regulamin konta.</label>
+                </div>
+                <button type="submit">Zarejestruj się</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
